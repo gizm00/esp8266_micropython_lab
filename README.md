@@ -3,19 +3,19 @@
 Welcome!
 This repo is mainly here to provide info on how to get setup for the tutorial. I might add some more interesting files later on, Ill email the class if I do.
 
-You will be learning to program in micropython using the ESP8266 microcontroller with the WeMos D1 mini development board. Phew! Basically the WeMos is the blue part of the picture below and the ESP is the silver & black part with the weird wave form looking thing (its an antenna).  The WeMos gives us some nice extras, like a reset button and a mini USB connection to power and communicate with the board. When I talk about 'the board' I'm referring to the WeMos. 
+You will be learning to program in micropython using the ESP8266 microcontroller with the WeMos D1 mini development board. Phew! Basically the WeMos is the blue part of the picture below and the ESP is the silver & black part with the weird wave form looking thing (its an antenna).  The WeMos gives us some nice extras, like a reset button and a mini USB connection to power and communicate with the board. When I talk about 'the board' I'm referring to the WeMos.
 
 ![photo of board and USB cable](photos/board.jpg)
 
- We will be creating a Thing to connect to the Internet that monitors temperature and humidity (the light blue boxy thing on the board). There will be blinking LEDs, sensing and communicating, and discussions of basic security for IoT networks.
+ We will be creating a Thing to connect to the Internet that monitors temperature and humidity (the light blue boxy thing beneath the WeMos). There will be blinking LEDs, sensing and communicating, and discussions of basic security for IoT networks.
 
 ### Setup Instructions
 Here are some instructions to help you get setup for the tutorial. If you run into problems please file an issue / check existing issues. Failing that you can contact me through the PyCon email interface.
 
  The equipment you will need:
-  * A computer with wifi and an available USB (3) port. We will use the USB port to power the ESP8266 microcontroller. You can also use a USB charging brick in lieu of a USB port.
+  * A computer with wifi and an available USB (3) port. We will use the USB port to power the ESP8266 microcontroller. You can also use a USB charging brick instead of a USB port.
 
-  * A web browser. Chrome preferred, Firefox or Windows Edge will also work.
+  * A web browser. Chrome preferred, Firefox or Windows Edge will also work. The webrepl client behaves a little finicky depending on browser, particularly for copy and paste. These 3 worked well.
 
 #### Programs to install:  
 I recommend you create a directory i.e. pycon2017 to keep track of the various collateral needed.
