@@ -7,7 +7,7 @@ You will be learning to program in micropython using the ESP8266 microcontroller
 
 ![photo of board and USB cable](photos/board.jpg)
 
- We will be creating a Thing to connect to the Internet that monitors temperature and humidity (the light blue boxy thing beneath the WeMos). There will be blinking LEDs, sensing and communicating, and discussions of basic security for IoT networks.
+ We will be creating a Thing to connect to the Internet that monitors temperature and humidity (the light blue boxy thing beneath the WeMos). There will be blinking LEDs, sensing and communicating, and discussions of basic security for IoT networks. There will also be snacks, I'm told.
 
 ### Setup Instructions
 Here are some instructions to help you get setup for the tutorial. If you run into problems please file an issue / check existing issues. Failing that you can contact me through the PyCon email interface.
