@@ -13,7 +13,7 @@ You will be learning to program in micropython using the ESP8266 microcontroller
 Here are some instructions to help you get setup for the tutorial. If you run into problems please file an issue / check existing issues. Failing that you can contact me through the PyCon email interface.
 
  The equipment you will need:
-  * A computer with wifi and an available USB (3) port. We will use the USB port to power the ESP8266 microcontroller. You can also use a USB charging brick instead of a USB port.
+  * A computer with wifi and an available USB (3) port. We will use the USB port to power the WeMos. You can also use a USB charging brick instead of a USB port.
 
   * A web browser. Chrome preferred, Firefox or Windows Edge will also work. The webrepl client behaves a little finicky depending on browser, particularly for copy and paste. These 3 worked well.
 
