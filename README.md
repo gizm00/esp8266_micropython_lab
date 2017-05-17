@@ -1,3 +1,11 @@
+#### Update 5/16
+Some additions / changes to the setup instructions below
+* Instead of Crouton we will use [mqtt-spy](https://github.com/eclipse/paho.mqtt-spy/wiki/Downloads) for visualization. Once you have mosquitto setup (see below) you can test out mqtt-spy following the [getting started](https://github.com/eclipse/paho.mqtt-spy/wiki/GettingStarted) instructions. Version 0.5.3 of mqtt-spy is available in this repo under the "tools" directory
+
+* We will be going over TLS/SSL which involves generating and using certificates and key files. While not mandatory, if you want to generate these files during the tutorial you can the shell scripts under "tools" in this repo for Linux and MacOS and refer to "Linux-MacOS_SSL_Client_Certs_RockingD_Labs.pdf". For Windows, install openssl and follow the instructions in the "Windows Mosquitto SSL Configuration.pdf" under tools from steves-internet-guide.  Micropython doesn't presently support SSL certificate verification, so we will just be using this on localhost; it's not a big deal if you can't get this to work.
+
+* I've added some code and config files to this repo you will want for the class. Ill be making additional updates on Wednesday (5/17) and will email the class when the final materials are ready.
+
 ## PyCon 2017 IoT Tutorial
 ##### The Internet of Things with MicroPython and Friends
 Welcome!
@@ -25,12 +33,7 @@ I recommend you create a directory i.e. pycon2017 to keep track of the various c
 `cd pycon2017`  
 `git clone https://github.com/micropython/webrepl.git`  
 
-* Install [Crouton](https://github.com/edfungus/Crouton).  Time permitting, we will use Crouton to view data. Crouton isn't a critical piece so don't fret if it gives you sass. You will need [node](https://nodejs.org/en/download/) and  [grunt_cli](https://github.com/gruntjs/grunt-cli).
-
-When you run grunt, you will see messages as Crouton starts up. Note the web server address and navigate there to view the Crouton dashboard
-
-`Running "connect:server" (connect) task`  
-`Started connect web server on http://localhost:9000`
+* ~~Install [Crouton](https://github.com/edfungus/Crouton).~~ This is replaced with mqtt-spy as indicated above.
 
 
 * Install the [Mosquitto MQTT broker]( https://mosquitto.org/download/)  

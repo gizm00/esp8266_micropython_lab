@@ -1,0 +1,3 @@
+*.pem
+led_functions.py
+no_webrepl/*
