@@ -1,3 +1,5 @@
 *.pem
 led_functions.py
 no_webrepl/*
+tools/mqtt-spy.log
+tools/mqtt-spy.messages
