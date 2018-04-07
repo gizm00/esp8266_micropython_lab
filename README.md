@@ -1,10 +1,3 @@
-#### Update 5/16
-Some additions / changes to the setup instructions below
-* Instead of Crouton we will use [mqtt-spy](https://github.com/eclipse/paho.mqtt-spy/wiki/Downloads) for visualization. Once you have mosquitto setup (see below) you can test out mqtt-spy following the [getting started](https://github.com/eclipse/paho.mqtt-spy/wiki/GettingStarted) instructions. Version 0.5.3 of mqtt-spy is available in this repo under the "tools" directory
-
-* We will be going over TLS/SSL which involves generating and using certificates and key files. While not mandatory, if you want to generate these files during the tutorial you can the shell scripts under "tools" in this repo for Linux and MacOS and refer to "Linux-MacOS_SSL_Client_Certs_RockingD_Labs.pdf". For Windows, install openssl and follow the instructions in the "Windows Mosquitto SSL Configuration.pdf" under tools from steves-internet-guide.  Micropython doesn't presently support SSL certificate verification, so we will just be using this on localhost; it's not a big deal if you can't get this to work.
-
-* I've added some code and config files to this repo you will want for the class. Ill be making additional updates on Wednesday (5/17) and will email the class when the final materials are ready.
 
 ## PyCon 2017 IoT Tutorial
 ##### The Internet of Things with MicroPython and Friends
@@ -18,22 +11,22 @@ You will be learning to program in micropython using the ESP8266 microcontroller
  We will be creating a Thing to connect to the Internet that monitors temperature and humidity (the light blue boxy thing beneath the WeMos). There will be blinking LEDs, sensing and communicating, and discussions of basic security for IoT networks. There will also be snacks, I'm told.
 
 ### Setup Instructions
-Here are some instructions to help you get setup for the tutorial. If you run into problems please file an issue / check existing issues. Failing that you can contact me through the PyCon email interface.
+Here are some instructions to help you get setup for the tutorial. If you run into problems please file an issue / check existing issues or send me a message.
 
  The equipment you will need:
-  * A computer with wifi and an available USB (3) port. We will use the USB port to power the WeMos. You can also use a USB charging brick instead of a USB port.
+  * A computer with wifi and an available USB (3) port. We will use the USB port to power the WeMos. You can also use a USB charging brick instead of a USB port. Please bring the power cable for your laptop as well.
 
   * A web browser. Chrome preferred, Firefox or Windows Edge will also work. The webrepl client behaves a little finicky depending on browser, particularly for copy and paste. These 3 worked well.
 
 #### Programs to install:  
-I recommend you create a directory i.e. pycon2017 to keep track of the various collateral needed.
+I recommend you create a top-level directory i.e. pycon2017 to keep track of the various repos to clone for this tutorial.
+
+* Clone this repo
 
 * Clone the [webrepl client](https://github.com/micropython/webrepl). This is a web interface we will use to program the ESP8266.
 
 `cd pycon2017`  
 `git clone https://github.com/micropython/webrepl.git`  
-
-* ~~Install [Crouton](https://github.com/edfungus/Crouton).~~ This is replaced with mqtt-spy as indicated above.
 
 
 * Install the Mosquitto MQTT broker
@@ -55,6 +48,10 @@ We will be using Mosquitto to transfer messages using the MQTT protocol.
 3. In another terminal/command window, setup a test publisher and send some messages. You should see these show up in your subscriber terminal  
 `mosquitto_pub -h 127.0.0.1 -i testPublish -t debug -m 'Hello World'`  
 
+
+* Install [mqtt-spy](https://github.com/eclipse/paho.mqtt-spy/wiki/Downloads) for visualization of MQTT messages. Once you have mosquitto setup (see below) you can test out mqtt-spy following the [getting started](https://github.com/eclipse/paho.mqtt-spy/wiki/GettingStarted) instructions. Version 0.5.3 of mqtt-spy is available in this repo under the "tools" directory
+
+* Time permitting, we will be going over TLS/SSL which involves generating and using certificates and key files. While not mandatory, if you want to generate these files during the tutorial you can the shell scripts under "tools" in this repo for Linux and MacOS and refer to "Linux-MacOS_SSL_Client_Certs_RockingD_Labs.pdf". For Windows, install openssl and follow the instructions in the "Windows Mosquitto SSL Configuration.pdf" under tools from [steves-internet-guide](http://www.steves-internet-guide.com/downloads/).  Micropython doesn't presently support SSL certificate verification, so we will just be using this on localhost; it's not a big deal if you can't get this to work.
 
 * Optionally, install the driver for the ESP8266. We won't be using this to connect to the ESP, but if you wanted to have a backup option or are just curious you can add this driver. I've verified that the firmware we are using (see firmware/ in this repo) works with the Mac driver
     - [MacOS](https://github.com/adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver)  
