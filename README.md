@@ -36,7 +36,7 @@ I recommend you create a directory i.e. pycon2017 to keep track of the various c
 * ~~Install [Crouton](https://github.com/edfungus/Crouton).~~ This is replaced with mqtt-spy as indicated above.
 
 
-* Install the [Mosquitto MQTT broker]( https://mosquitto.org/download/)  
+* Install the Mosquitto MQTT broker
 We will be using Mosquitto to transfer messages using the MQTT protocol.  
   - MacOS: `brew install mosquitto`
   - Windows: Download the [Mosquitto Install Files]( http://www.steves-internet-guide.com/downloads/) and place in C:\Program Files (x86)\mosquitto  
@@ -57,6 +57,6 @@ We will be using Mosquitto to transfer messages using the MQTT protocol.
 
 
 * Optionally, install the driver for the ESP8266. We won't be using this to connect to the ESP, but if you wanted to have a backup option or are just curious you can add this driver. I've verified that the firmware we are using (see firmware/ in this repo) works with the Mac driver
-    - [MacOS](http://www.wch.cn/download/CH341SER_MAC_ZIP.html)  
+    - [MacOS](https://github.com/adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver)  
     - [Windows](http://www.wch.cn/download/CH341SER_ZIP.html)
     - [Linux](http://www.wch.cn/download/CH341SER_LINUX_ZIP.html)
