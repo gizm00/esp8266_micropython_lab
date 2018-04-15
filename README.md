@@ -2,7 +2,9 @@
 ## PyCon 2017 IoT Tutorial
 ##### The Internet of Things with MicroPython and Friends
 Welcome!
-This repo is mainly here to provide info on how to get setup for the tutorial. I might add some more interesting files later on, Ill email the class if I do.
+This repo is mainly here to provide info on how to get setup for the tutorial.  
+
+Please note: If your laptop is running a firewall or VPN you will need to disable these for the tutorial to work. We will only be connecting to the wifi network provided by your board, not the internet.  Additionally, please make sure to bring a power supply for your laptop - we will be using your laptop to power the hardware and it wont work if you're just running off battery power.
 
 You will be learning to program in micropython using the ESP8266 microcontroller with the WeMos D1 mini development board. Phew! Basically the WeMos is the blue part of the picture below and the ESP is the silver & black part with the weird wave form looking thing (its an antenna).  The WeMos gives us some nice extras, like a reset button and a mini USB connection to power and communicate with the board. When I talk about 'the board' I'm referring to the WeMos.
 
